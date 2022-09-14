@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class testempolyee {
 	public static void main(String[] args) {
@@ -35,6 +37,14 @@ public class testempolyee {
 			ObjectInputStream objread = new ObjectInputStream(f1);
 			Employee read = (Employee) objread.readObject();
 			System.out.println(read);
+//			ArrayList a= new ArrayList<>();
+//			a.add(read);
+//			//System.out.println(a);
+//			Iterator i=a.iterator();
+//			System.out.println(i.next());
+//			for (Object object : a) {
+//				System.out.println(object);
+//			}
 		} catch (FileNotFoundException es) {
 			// TODO Auto-generated catch block
 			es.printStackTrace();
