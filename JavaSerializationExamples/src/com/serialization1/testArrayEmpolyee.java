@@ -33,10 +33,10 @@ public class testArrayEmpolyee {
 		try (ObjectInputStream ob = new ObjectInputStream(new FileInputStream("src/com/serialization1/EmpArr.ser"))) {
 			ArrayList i = (ArrayList) ob.readObject();
 			System.out.println(i);
-			Iterator itr= i.iterator();
-			while(itr.hasNext()) {
+			Iterator itr = i.iterator();
+			while (itr.hasNext()) {
 				System.out.println(itr.next());
-				//System.out.println(itr.hasNext());
+				// System.out.println(itr.hasNext());
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
